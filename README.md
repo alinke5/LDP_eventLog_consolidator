@@ -1,13 +1,13 @@
-# 📊 Lakeflow Declarative Pipeline – DLT Event Log Consolidator
+# 📊 Lakeflow Declarative Pipeline – Event Log Consolidator
 
-Unify **Delta Live Tables (DLT)** event logs from multiple pipelines into a single analytics-ready layer for monitoring, troubleshooting, and performance insights.
+Unify **LAkeflow Declarative Pipelines (LDP)** event logs from multiple pipelines into a single analytics-ready layer for monitoring, troubleshooting, and performance insights.
 
 Author: Alex Linke | Sr. Solutions Architect @ Databricks
 ---
 
 ## 🚀 Overview
 
-By default, every DLT pipeline writes its own event log table.  
+By default, every LDP pipeline writes its own event log table.  
 That’s fine for debugging a single pipeline but makes it **hard to see the big picture** across dozens of pipelines.
 
 This solution:
@@ -19,7 +19,7 @@ This solution:
 
 ## 📊 Analytics Tables Produced
 
-- **`dlt_consolidated_events`** — Raw union of all DLT events (with source info)  
+- **`dlt_consolidated_events`** — Raw union of all LDP events (with source info)  
 - **`dlt_pipeline_runs`** — One row per run: start, end, duration, status  
 - **`dlt_performance_metrics`** — Success rates, avg/min/max/P95 durations  
 - **`dlt_error_analysis`** — Error counts, sample messages, affected runs  
@@ -94,7 +94,7 @@ Permissions to SHOW CATALOGS/SCHEMAS/TABLES + read event log tables
 
 Write access to your target output_catalog.output_schema
 
-DBR 14.x+ (cluster or SQL Warehouse)
+Works best with Serverless Notebooks!!
 
 ## 📅 Ops Tips
 Start with days_back = 30–90 for performance
