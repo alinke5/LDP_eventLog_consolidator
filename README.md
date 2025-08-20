@@ -2,6 +2,8 @@
 
 Unify **LAkeflow Declarative Pipelines (LDP)** event logs from multiple pipelines into a single analytics-ready layer for monitoring, troubleshooting, and performance insights.
 
+For reference, Lakeflow Declarative Pipelines was formerly known as Delta Live Tables (DLT). You will see LDP and DLT interchangeably throughout the codebase as "DLT" is still used in the Databricks Event Log table names. 
+
 Author: Alex Linke | Sr. Solutions Architect @ Databricks
 ---
 
